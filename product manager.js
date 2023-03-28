@@ -43,3 +43,4 @@ class ProductManager {
         const manejadorProductos = new ProductManager();
         manejadorProductos.AddProduct('Disco vinilo');
         manejadorProductos.AddProduct("Bnadeja Technichs");
+        
