@@ -9,7 +9,7 @@ class ProductManager {
     }}
 
     AddProduct = (
-        id=1, title= "producto prueba", description= "Este es un producto de prueba", price= 200,thumbnail="Sin imagen", code="abc123",stock="25",
+        title= "producto prueba", description= "Este es un producto de prueba", price= 200,thumbnail="Sin imagen", code="abc123",stock="25",
         
     ) => {
         const product = {
@@ -38,9 +38,13 @@ class ProductManager {
                 return;
             }
         }
-        console.log(Products)
 
         const manejadorProductos = new ProductManager();
-        manejadorProductos.AddProduct('Disco vinilo');
-        manejadorProductos.AddProduct("Bnadeja Technichs");
+        manejadorProductos.AddProduct('Disco vinilo','sin descripcion', 500,thumbnail,code);
+        manejadorProductos.AddProduct('Bnadeja Technichs','sin descripcion', 5500,thumbnail,code);
+        manejadorProductos.getProductById()
+        manejadorProductos.getProductById()
+
+        console.log(manejadorProductos.getProducts());
+
         
